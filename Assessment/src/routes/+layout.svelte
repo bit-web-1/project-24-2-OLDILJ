@@ -1,7 +1,7 @@
 <script>
     /** @type {import('./$types').LayoutData} */
-    export let data;
     import "../lib/styles.css"
+    export let data;
 </script>
 
 <slot />
