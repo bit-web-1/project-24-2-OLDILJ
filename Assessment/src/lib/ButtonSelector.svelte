@@ -56,7 +56,7 @@
     }
     p
     {
-        border: 0.1em solid black;
+        
         transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
         animation: flicker 0.25s infinite ease-out;
         animation-play-state: paused;
