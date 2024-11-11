@@ -12,7 +12,6 @@
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
-        border: 1px solid black;
         overflow: hidden;
     }
     .New
