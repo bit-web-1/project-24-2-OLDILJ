@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-netlify';
 
+//https://svelte.dev/docs/kit/adapter-netlify
 export default {
 	kit: {
 		// default options are shown

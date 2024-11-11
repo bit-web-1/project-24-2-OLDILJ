@@ -1,12 +1,18 @@
 <div class="wrapper">
-    <p class="New">New</p>
+    <a href="/Main" class="New">New</a>
     <p class="Load">Load</p>
     <p class="Options">Options</p>
     <p class="Prior">Prior Runs</p>
 </div>
     
 <style>
-
+    a
+    {
+        text-decoration: none;
+        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
+        animation: flicker 0.25s infinite ease-out;
+        animation-play-state: paused;
+    }
     .wrapper
     {
         margin-left: 10%;
@@ -59,6 +65,17 @@
         transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
         animation: flicker 0.25s infinite ease-out;
         animation-play-state: paused;
+    }
+    a:hover
+    {
+        animation-play-state: running;
+    }
+    a:not(:hover)
+    {
+        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
+        animation: flicker 0.0s infinite ease-out;
+        animation-play-state: paused;
+        color: brown 
     }
     p:hover
     {
