@@ -22,6 +22,7 @@
     }
     .New
     {
+        margin-top: 2%;
         display: flex;
         justify-content: left;
         margin-left:15em;
