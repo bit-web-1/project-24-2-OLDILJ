@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <a href="/Main" class="New">New</a>
+    <a href="/New" class="New">New</a>
     <a href="/Load" class="Load">Load</a>
     <a href="/Options" class="Options">Options</a>
     <p class="Prior">Prior Runs</p>
@@ -8,50 +8,31 @@
 <style>
     .wrapper
     {
+        display: grid;
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
-        overflow: hidden;
+        gap: 10em , 5em;
     }
     .New
     {
-        margin-top: 2%;
-        display: flex;
-        justify-content: left;
-        margin-left:15em;
-        margin-right: 13em;
-        float:left;
+        justify-self: center;
         font-size: 2em;
         
     }
     .Load
     {
-        margin-top: 2%;
-        display: flex;
-        justify-content: right;
-        margin-right: 13em;
-        float:left;
-        font-size: 2em;
-        
+        justify-self: center;
+        font-size: 2em;   
     }
     .Options
     {
-        margin-top: 10%;
-        display: flex;
-        justify-content: left;
-        margin-left:15em;
-        margin-right: 11.8em;
-        clear: both;
-        float: left;
+        justify-self: center;
         font-size: 2em;
     }
     .Prior
     {
-        margin-top: 10%;
-        display: flex;
-        justify-content: left;
-        margin-right: 12em;
-        float: left;
+        justify-self: center;
         font-size: 2em;
     }
     a

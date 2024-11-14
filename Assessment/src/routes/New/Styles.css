@@ -1,0 +1,36 @@
+.Title
+{
+    display:  flex;
+    color: yellow;
+    justify-content: center;
+}
+.Wrapper
+{
+    justify-items: center;
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+    gap: 10em , 5em;
+}
+img:hover
+{
+    opacity: 0.7;
+}
+.Char1
+{
+    size: 7em;
+    padding: 2em;
+    align-items: 1;
+}
+.Char2
+{
+    padding: 2em;
+    align-items: 2;
+}
+.Char3
+{
+    padding: 2em;
+    align-items: 3;
+}
