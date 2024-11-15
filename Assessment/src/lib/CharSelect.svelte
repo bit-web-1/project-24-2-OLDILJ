@@ -44,7 +44,6 @@
 <button on:click={ExportData}>
     Confirm Selection?
 </button>
-<a href="/Main">DebugExit</a>
 <style>
 button
 {
