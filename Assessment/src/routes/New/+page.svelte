@@ -6,26 +6,16 @@
     import Char1 from '$lib/Characters/Char1.png';
     import Char2 from '$lib/Characters/Char2.png';
     import Char3 from '$lib/Characters/Char3.png';
+    import CharSel from "$lib/CharSelect.svelte";
 </script>
 <h1 class="Title">Select Your Character</h1>
 
 
 
 
+
 <form method="POST">
     <div class="Wrapper">
-        <label>
-            
-            <input type="radio" name="CharSelect" value="Char1"/>
-            <img src={Char1} alt="Char1" class="Char1">
-        </label>
-        <label>
-            <input type="radio" name="CharSelect" id="Char2"/>
-            <img src={Char2} alt="Char2" class="Char2">
-        </label>
-        <label>
-            <input type="radio" name="CharSelect" id="Char3"/>
-            <img src={Char3} alt="Char3" class="Char3">
-        </label>
+        <CharSel/>
     </div>
 </form>

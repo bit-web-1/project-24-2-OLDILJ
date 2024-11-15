@@ -1,5 +1,4 @@
-import { e as escape_html } from "../../../chunks/escaping.js";
-import { E as pop, B as push } from "../../../chunks/index.js";
+import { I as escape_html, E as pop, B as push } from "../../../chunks/index.js";
 function _page($$payload, $$props) {
   push();
   let { data } = $$props;

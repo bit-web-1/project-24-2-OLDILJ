@@ -1,6 +1,5 @@
-import { G as getContext, I as store_get, J as unsubscribe_stores, E as pop, B as push } from "../../chunks/index.js";
+import { G as getContext, I as escape_html, J as store_get, K as unsubscribe_stores, E as pop, B as push } from "../../chunks/index.js";
 import "../../chunks/client.js";
-import { e as escape_html } from "../../chunks/escaping.js";
 const getStores = () => {
   const stores = getContext("__svelte__");
   return {

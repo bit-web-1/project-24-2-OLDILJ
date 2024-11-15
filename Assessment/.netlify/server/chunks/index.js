@@ -844,6 +844,22 @@ function subscribe_to_store(store, run, invalidate) {
   );
   return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
 }
+const ATTR_REGEX = /[&"<]/g;
+const CONTENT_REGEX = /[&<]/g;
+function escape_html(value, is_attr) {
+  const str = String(value ?? "");
+  const pattern = is_attr ? ATTR_REGEX : CONTENT_REGEX;
+  pattern.lastIndex = 0;
+  let escaped = "";
+  let last = 0;
+  while (pattern.test(str)) {
+    const i = pattern.lastIndex - 1;
+    const ch = str[i];
+    escaped += str.substring(last, i) + (ch === "&" ? "&amp;" : ch === '"' ? "&quot;" : "&lt;");
+    last = i + 1;
+  }
+  return escaped + str.substring(last);
+}
 var current_component = null;
 function getContext(key) {
   const context_map = get_or_init_context_map();
@@ -917,6 +933,18 @@ function render(component, options = {}) {
     body: payload.out
   };
 }
+const replacements = {
+  translate: /* @__PURE__ */ new Map([
+    [true, "yes"],
+    [false, "no"]
+  ])
+};
+function attr(name, value, is_boolean = false) {
+  if (value == null || !value && is_boolean || value === "" && name === "class") return "";
+  const normalized = name in replacements && replacements[name].get(value) || value;
+  const assignment = is_boolean ? "" : `="${escape_html(normalized, true)}"`;
+  return ` ${name}${assignment}`;
+}
 function store_get(store_values, store_name, store) {
   if (store_name in store_values && store_values[store_name][0] === store) {
     return store_values[store_name][2];
@@ -954,8 +982,10 @@ export {
   slot as F,
   getContext as G,
   HYDRATION_ERROR as H,
-  store_get as I,
-  unsubscribe_stores as J,
+  escape_html as I,
+  store_get as J,
+  unsubscribe_stores as K,
+  attr as L,
   set_active_reaction as a,
   set_active_effect as b,
   active_reaction as c,
