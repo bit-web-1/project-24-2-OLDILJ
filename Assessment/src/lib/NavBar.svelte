@@ -1,6 +1,15 @@
 <ul>
     <li>
-        <a href="/Home">Home</a>
+        <a href="/Home" class="BaseDirectory">Home</a>
+    </li>
+    <li>
+        <a href="/New">New Game</a>
+    </li>
+    <li>
+        <a href="/Options">Options</a>
+    </li>
+    <li>
+        <a href="/PriorRuns">Prior Runs</a>
     </li>
 </ul>
 
@@ -16,15 +25,24 @@
 }
 li a
 {
-    color: black;
+    color: rgb(36, 36, 36);
     text-align: center;
     padding: 4, 8;
     display: block;
     text-decoration: none;
 }
+li
+{
+    
+    border-bottom: 2px solid rgb(102, 66, 66)
+}
 li a:hover
 {
     background-color: rgb(190, 104, 88);
     color: wheat;
+}
+li a.BaseDirectory
+{
+    background-color: rgb(241, 88, 61);
 }
 </style>
