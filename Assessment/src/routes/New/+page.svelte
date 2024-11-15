@@ -9,8 +9,23 @@
 </script>
 <h1 class="Title">Select Your Character</h1>
 
-<div class="Wrapper">
-    <a href="/Main"><img src={Char1} alt="Char1" class="Char1"></a>
-    <a href="/Main"><img src={Char2} alt="Char2" class="Char2"></a>
-    <a href="/Main"><img src={Char3} alt="Char3" class="Char3"></a>
-</div>
+
+
+
+<form method="POST">
+    <div class="Wrapper">
+        <label>
+            
+            <input type="radio" name="CharSelect" value="Char1"/>
+            <img src={Char1} alt="Char1" class="Char1">
+        </label>
+        <label>
+            <input type="radio" name="CharSelect" id="Char2"/>
+            <img src={Char2} alt="Char2" class="Char2">
+        </label>
+        <label>
+            <input type="radio" name="CharSelect" id="Char3"/>
+            <img src={Char3} alt="Char3" class="Char3">
+        </label>
+    </div>
+</form>
