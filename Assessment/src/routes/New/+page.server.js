@@ -1,4 +1,5 @@
 /** @type {import('./$types').PageServerLoad} */
+import * as db from '$lib/database.js';
 import { redirect } from '@sveltejs/kit';
 export function load({ cookies }) {
 	const priorRuns = cookies.get('priorRuns');
@@ -13,3 +14,9 @@ export function load({ cookies }) {
 		visited: visited === 'true'
 	};
 }
+export const actions = {
+	default: async ({ cookies, request }) => {
+		const data = await request.formData();
+	cookies.get('userid'), data.get('description');
+	}
+};

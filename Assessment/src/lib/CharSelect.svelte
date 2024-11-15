@@ -10,11 +10,11 @@
     {
         console.log(this.value)
         selectedChar = this.value
-        setContext("CharVal", selectedChar)
+        
     }
     function ExportData()
     {
-        
+        setContext("CharVal", selectedChar)
         
     }
     
@@ -50,8 +50,10 @@
     Confirm Selection?
 </button>
 <style>
-div
+button
 {
+    display: flex;
     justify-self: center;
+    align-self: center;
 }
 </style>
