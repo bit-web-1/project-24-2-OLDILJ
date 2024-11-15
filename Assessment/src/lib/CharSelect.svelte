@@ -10,7 +10,10 @@
         selectedChar = this.value
         
     }
-    
+    function ExportData()
+    {
+        location.href = "/Main"
+    }
 </script>
 <label>
     <input type="radio" name="CharSelect" value="Char1" on:click={Test}/>
@@ -42,6 +45,7 @@
 <button on:click={ExportData}>
     Confirm Selection?
 </button>
+<a href="/Main">DebugExit</a>
 <style>
 button
 {

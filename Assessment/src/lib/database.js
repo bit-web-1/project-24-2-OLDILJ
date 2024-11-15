@@ -19,5 +19,10 @@ export function setChar(selectedChar)
     db.set(db.userid, [{
         CurRunChar: selectedChar
     }])
+    return db.get(userid,db.CurRunChar);
     console.log(db.userid, db.CurRunChar)
+}
+export function getChar()
+{
+    return db.get(db.CurRunChar)
 }
