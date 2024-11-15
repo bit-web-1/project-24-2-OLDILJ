@@ -1,11 +1,20 @@
 
 <script>
+    import { writable } from 'svelte/store';
+
     import Char1 from '$lib/Characters/Char1.png';
     import Char2 from '$lib/Characters/Char2.png';
     import Char3 from '$lib/Characters/Char3.png';
-    function Test()
+    let selectedChar = writable("");
+    async function Test()
     {
-        console.log(this);
+        console.log(this.value)
+        selectedChar = this.value
+        setContext("CharVal", selectedChar)
+    }
+    function ExportData()
+    {
+        
         
     }
     
@@ -37,6 +46,9 @@
         ??? Weight. ??? Attack ??? Speed
     </p>
 </div>
+<button on:click={ExportData}>
+    Confirm Selection?
+</button>
 <style>
 div
 {
