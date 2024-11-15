@@ -2,7 +2,7 @@
     <a href="/New" class="New">New</a>
     <a href="/Load" class="Load">Load</a>
     <a href="/Options" class="Options">Options</a>
-    <p class="Prior">Prior Runs</p>
+    <a href="/PriorRuns"class="Prior">Prior Runs</a>
     <a href="/About" class="About">About</a>
 </div>
 

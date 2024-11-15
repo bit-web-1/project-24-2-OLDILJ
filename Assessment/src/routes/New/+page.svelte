@@ -7,6 +7,7 @@
     import Char2 from '$lib/Characters/Char2.png';
     import Char3 from '$lib/Characters/Char3.png';
     import CharSel from "$lib/CharSelect.svelte";
+    import NavBar from "$lib/NavBar.svelte";
 </script>
 <h1 class="Title">Select Your Character</h1>
 
