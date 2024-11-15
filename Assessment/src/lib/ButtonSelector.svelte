@@ -48,13 +48,6 @@
         animation: flicker 0.5s infinite ease-out;
         animation-play-state: paused;
     }
-    p
-    {
-        
-        transition: 2s cubic-bezier(0.075, 1, 0.765, 1);
-        animation: flicker 0.5s infinite ease-out;
-        animation-play-state: paused;
-    }   
     a:is(:focus, :hover)
 
     {   
@@ -67,27 +60,6 @@
         animation: flicker 0.0s infinite ease-out;
         animation-play-state: paused;
         color: brown 
-    }
-    /* :is(a:not(:hover)),
-    :is(a:not(:focus))  
-    {
-        transition: 2s cubic-bezier(0.075, 1, 0.765, 1);
-        animation: flicker 0.0s infinite ease-out;
-        animation-play-state: paused;
-        color: brown 
-    } */
-
-
-    p:hover
-    {
-        animation-play-state: running;
-    }
-    p:not(:hover)
-    {
-        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
-        animation: flicker 0.0s infinite ease-out;
-        animation-play-state: paused;
-        color: brown
     }
     @keyframes flicker
     {
