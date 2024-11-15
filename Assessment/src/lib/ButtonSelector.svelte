@@ -1,83 +1,83 @@
 <div class="wrapper">
-    <a href="/Main" class="New">New</a>
-    <p class="Load">Load</p>
-    <p class="Options">Options</p>
-    <p class="Prior">Prior Runs</p>
+    <a href="/New" class="New">New</a>
+    <a href="/Load" class="Load">Load</a>
+    <a href="/Options" class="Options">Options</a>
+    <a href="/PriorRuns"class="Prior">Prior Runs</a>
+    <a href="/About" class="About">About</a>
 </div>
-    
+
 <style>
-    a
-    {
-        text-decoration: none;
-        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
-        animation: flicker 0.25s infinite ease-out;
-        animation-play-state: paused;
-    }
     .wrapper
     {
+        display: grid;
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
-        overflow: hidden;
+        gap: 10em , 5em;
     }
     .New
     {
-        margin-top: 2%;
-        display: flex;
-        justify-content: left;
-        margin-left:15em;
-        margin-right: 13em;
-        float:left;
+        justify-self: center;
         font-size: 2em;
         
     }
     .Load
     {
-        display: flex;
-        justify-content: right;
-        margin-right: 13em;
-        float:left;
-        font-size: 2em;
-        
+        justify-self: center;
+        font-size: 2em;   
     }
     .Options
     {
-        margin-top: 10%;
-        display: flex;
-        justify-content: left;
-        margin-left:15em;
-        margin-right: 11.8em;
-        clear: both;
-        float: left;
+        justify-self: center;
         font-size: 2em;
     }
     .Prior
     {
-        margin-top: 10%;
-        display: flex;
-        justify-content: left;
-        margin-right: 12em;
-        float: left;
+        justify-self: center;
         font-size: 2em;
+    }
+    .About
+    {
+        justify-self: center;
+        font-size: 2em;
+    }
+    a
+    {
+        text-decoration: none;
+        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
+        animation: flicker 0.5s infinite ease-out;
+        animation-play-state: paused;
     }
     p
     {
         
-        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
-        animation: flicker 0.25s infinite ease-out;
+        transition: 2s cubic-bezier(0.075, 1, 0.765, 1);
+        animation: flicker 0.5s infinite ease-out;
         animation-play-state: paused;
-    }
-    a:hover
-    {
+    }   
+    a:is(:focus, :hover)
+
+    {   
+        
         animation-play-state: running;
     }
-    a:not(:hover)
+
+    a:not(:hover, :focus)
     {
-        transition: 1s cubic-bezier(0.075, 1, 0.765, 1);
         animation: flicker 0.0s infinite ease-out;
         animation-play-state: paused;
         color: brown 
     }
+    /* :is(a:not(:hover)),
+    :is(a:not(:focus))  
+    {
+        transition: 2s cubic-bezier(0.075, 1, 0.765, 1);
+        animation: flicker 0.0s infinite ease-out;
+        animation-play-state: paused;
+        color: brown 
+    } */
+
+
     p:hover
     {
         animation-play-state: running;
