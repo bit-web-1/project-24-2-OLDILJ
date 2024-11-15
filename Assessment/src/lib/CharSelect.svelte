@@ -4,14 +4,11 @@
     import Char2 from '$lib/Characters/Char2.png';
     import Char3 from '$lib/Characters/Char3.png';
     let selectedChar;
-    async function Test()
+    export async function Test()
     {
         console.log(this.value)
         selectedChar = this.value
         
-    }
-    function ExportData()
-    {
     }
 </script>
 <label>

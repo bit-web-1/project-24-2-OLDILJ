@@ -10,11 +10,7 @@
     import NavBar from "$lib/NavBar.svelte";
 </script>
 <h1 class="Title">Select Your Character</h1>
-
-
-
-
-
+<NavBar/>
 <form method="POST">
     <div class="Wrapper">
         <CharSel/>
