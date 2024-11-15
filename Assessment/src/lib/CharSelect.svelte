@@ -1,20 +1,13 @@
 
 <script>
-    import { writable } from 'svelte/store';
-
     import Char1 from '$lib/Characters/Char1.png';
     import Char2 from '$lib/Characters/Char2.png';
     import Char3 from '$lib/Characters/Char3.png';
-    let selectedChar = writable("");
+    let selectedChar;
     async function Test()
     {
         console.log(this.value)
         selectedChar = this.value
-        
-    }
-    function ExportData()
-    {
-        setContext("CharVal", selectedChar)
         
     }
     

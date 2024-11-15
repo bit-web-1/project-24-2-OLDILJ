@@ -12,12 +12,12 @@ export function getCurRun(userid) {
 }
 export function setChar(selectedChar)
 {
-    if (!db.get(userid)) 
+    if (!db.get(db.userid) || (db.CurRunChar)) 
         {
             getCurRun()
         }
-    db.set(userid, [{
+    db.set(db.userid, [{
         CurRunChar: selectedChar
     }])
-    console.log(userid, CurRunChar)
+    console.log(db.userid, db.CurRunChar)
 }

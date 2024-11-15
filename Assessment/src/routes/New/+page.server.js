@@ -17,6 +17,6 @@ export function load({ cookies }) {
 export const actions = {
 	default: async ({ cookies, request }) => {
 		const data = await request.formData();
-	cookies.get('userid'), data.get('description');
+		db.setChar(cookies.get('userid'), data.get('CharSelect'));
 	}
 };
