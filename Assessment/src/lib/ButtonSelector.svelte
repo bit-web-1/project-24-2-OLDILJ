@@ -3,6 +3,7 @@
     <a href="/Load" class="Load">Load</a>
     <a href="/Options" class="Options">Options</a>
     <p class="Prior">Prior Runs</p>
+    <a href="/About" class="About">About</a>
 </div>
 
 <style>
@@ -31,6 +32,11 @@
         font-size: 2em;
     }
     .Prior
+    {
+        justify-self: center;
+        font-size: 2em;
+    }
+    .About
     {
         justify-self: center;
         font-size: 2em;
