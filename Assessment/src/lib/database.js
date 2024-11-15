@@ -12,17 +12,21 @@ export function getCurRun(userid) {
 }
 export function setChar(selectedChar)
 {
-    if (!db.get(db.userid) || (db.CurRunChar)) 
+    if (!db.get(db.userid))
         {
-            getCurRun()
+            db.set(db.userid, [{
+                id: crypto.randomUUID(),
+                description: 'New Player',
+            }]);
         }
     db.set(db.userid, [{
         CurRunChar: selectedChar
     }])
-    return db.get(userid,db.CurRunChar);
+    return db.get(db.userid,db.CurRunChar);
     console.log(db.userid, db.CurRunChar)
 }
 export function getChar()
 {
+    console.log(db.CurRunChar, "test")
     return db.get(db.CurRunChar)
 }

@@ -6,8 +6,6 @@ export function load({ cookies }) {
 	const visited = cookies.get('visited');
 	const InProgress = cookies.get('InProgress');
 	cookies.set('visited', 'true', {path: '/'});
-	let CharVal = 0;
-	let SelectedChar = cookies.set('Character', {CharVal}, {path: '/'});
 	//redirect(301, '/Home');
 	return {
 		InProgress: InProgress === 'true',
@@ -15,8 +13,9 @@ export function load({ cookies }) {
 	};
 }
 export const actions = {
-	default: async ({ cookies, request }) => {
+	default: async ({ request }) => {
 		const data = await request.formData();
 		db.setChar(data.get('CharSelect'));
+		redirect(301, "/Main")
 	}
 };

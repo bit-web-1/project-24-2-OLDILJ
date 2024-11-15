@@ -12,7 +12,6 @@
     }
     function ExportData()
     {
-        location.href = "/Main"
     }
 </script>
 <label>
