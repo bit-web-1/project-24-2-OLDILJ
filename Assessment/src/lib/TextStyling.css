@@ -1,0 +1,17 @@
+body
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h1
+{
+    display: flex;
+    justify-self: center;
+}
+p
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    color: rgb(52, 52, 52);
+}
