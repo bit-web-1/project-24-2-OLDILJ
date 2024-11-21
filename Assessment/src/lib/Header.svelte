@@ -10,13 +10,25 @@
     {
         width: 80%;
         padding-left: 5%;
-        padding-bottom: 10%;
+        padding-bottom: 2%;
         justify-items: center;
     }
     img
     {
-        
+        padding-left: 1%;
         vertical-align: middle;
+    }
+    img:hover
+    {
+        image-rendering:pixelated;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    img:active
+    {
+        image-rendering:pixelated;
+        transform:rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
     }
     h1
     {
