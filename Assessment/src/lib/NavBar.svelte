@@ -14,23 +14,31 @@
     {
         background-color: rgb(110, 110, 110);
         list-style-type: none;
+        display: flex;
+        font-size: x-large;
+        justify-content: space-evenly;
+        padding-right: 50%;
     }
     li
     {
+        
         border: .15em solid rgb(0, 0, 0);
-        display: inline-flex;
+        width: auto;
+        
     }
     li a
     {
+        transition: all .25s ease-in-out;
         color: rgb(20, 20, 20);
         text-align: center;
-        padding: 3em, 3em;
+        
         text-decoration: none;
         
     }
     li a:hover
     {
-        font-size: large;
+        
+        font-size: 110%;
         border: .15em dashed black;
         background-color: rgb(139,140,139);
     }

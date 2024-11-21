@@ -11,11 +11,11 @@
         width: 80%;
         padding-left: 5%;
         padding-bottom: 2%;
-        justify-items: center;
     }
     img
     {
-        padding-left: 1%;
+        transition: all 1s ease-in-out;
+        padding-left: 5%;
         vertical-align: middle;
     }
     img:hover
@@ -32,8 +32,13 @@
     }
     h1
     {
-        text-align: center;
-        display: inline-block;
+        transition: all 1s ease-in-out;
+        display: inline-flex;
         vertical-align:middle;
+    }
+    h1:active
+    {
+        transform: scale(2,4);
+        
     }
 </style>
