@@ -13,7 +13,8 @@
 <style>
     ul
     {
-        background-color: rgb(110, 110, 110);
+        border: .05em solid rgb(20, 20, 20);
+        background-color: rgb(209, 209, 209);
         list-style-type: none;
         display: flex;
         font-size: x-large;
