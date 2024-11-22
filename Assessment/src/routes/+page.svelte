@@ -1,8 +1,8 @@
 <script>
-    import { goto } from '$app/navigation';
-    /** @type {{ data: import('./$types').PageData }} */
-    let { data } = $props();
+    import Head from "$lib/Header.svelte";
+    import Bar from "$lib/NavBar.svelte";
 </script>
-
-<h1>Hello and welcome to my site!</h1>
-<a href="/Home">About my site</a>
+<Head/>
+<Bar/>
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>

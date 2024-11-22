@@ -1,48 +1,50 @@
+<script>
+
+</script>
+
 <ul>
-    <li>
-        <a href="/Home" class="BaseDirectory">Home</a>
-    </li>
-    <li>
-        <a href="/New">New Game</a>
-    </li>
-    <li>
-        <a href="/Options">Options</a>
-    </li>
-    <li>
-        <a href="/PriorRuns">Prior Runs</a>
-    </li>
+    <li><a href="/Home">Home</li>
+    <li><a href="/About">About</li>
+    <li><a href="/Latest">Latest</li>
+    <li><a href="/Contact">Contact</li>
+    <li><a href="/Weather">Weather</li>
 </ul>
 
 <style>
     ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-
-    background-color:rgb(224, 125, 89);
-}
-li a
-{
-    color: rgb(36, 36, 36);
-    text-align: center;
-    padding: 4, 8;
-    display: block;
-    text-decoration: none;
-}
-li
-{
-    
-    border-bottom: 2px solid rgb(102, 66, 66)
-}
-li a:hover
-{
-    background-color: rgb(190, 104, 88);
-    color: wheat;
-}
-li a.BaseDirectory
-{
-    background-color: rgb(241, 88, 61);
-}
+    {
+        border: .05em solid rgb(20, 20, 20);
+        background-color: rgb(209, 209, 209);
+        list-style-type: none;
+        display: flex;
+        font-size: x-large;
+        justify-content: space-evenly;
+        padding-right: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    li
+    {
+        
+        border: .15em solid rgb(0, 0, 0);
+        
+        
+    }
+    li a
+    {
+        
+        transition: all .25s ease-in-out;
+        color: rgb(20, 20, 20);
+        text-align: center;
+        
+        text-decoration: none;
+        
+    }
+    li a:hover
+    {
+        
+        font-size: 110%;
+        border: .15em dashed black;
+        background-color: rgb(139,140,139);
+    }
 </style>

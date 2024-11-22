@@ -1,5 +1,9 @@
+
 <script>
-    import Btn from "$lib/ButtonSelector.svelte";
+    import Head from "$lib/Header.svelte";
+    import Bar from "$lib/NavBar.svelte";
+    import "./styles.css"
 </script>
-<h1 class="title">Welcome</h1>
-<Btn></Btn>
+<Head/>
+<Bar/>
+<h2>Welcome!</h2>
