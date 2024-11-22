@@ -8,6 +8,7 @@
 <style>
     .FloatContainer
     {
+        display: inline-flex;
         width: 80%;
         padding-left: 5%;
         padding-bottom: 2%;
@@ -32,9 +33,9 @@
     }
     h1
     {
+        text-align: center;
         transition: all 1s ease-in-out;
-        display: inline-flex;
-        vertical-align:middle;
+        vertical-align: middle;
     }
     h1:active
     {
