@@ -1,0 +1,32 @@
+table
+{
+    justify-self: center;
+    border-collapse: collapse;
+    border: .2em solid rgb(100,100,100);
+    letter-spacing: 2px;
+}
+thead
+{
+    background-color: rgb(200,200,220);
+}
+tr,
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+thead:nth-child(odd)
+{
+    background-color: rgb(200,200,200);
+}
+.Centered
+{
+    justify-self: center;
+}
+form
+{
+    padding-top: 2%;
+    justify-self: center;
+    
+}
+
