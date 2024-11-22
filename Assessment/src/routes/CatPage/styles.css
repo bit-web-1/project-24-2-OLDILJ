@@ -1,5 +1,6 @@
 h2
 {
+    color: grey;
     justify-self: center;
 }
 button
@@ -7,3 +8,30 @@ button
     justify-content: center;
     width: auto;
 }
+body
+{
+    transition: 1s Moving ease-in-out infinite;
+    background-repeat: repeat;
+}
+@keyframes Moving {
+    0%
+    {
+        transform: translateX(0rem);
+        transform: translateY(0rem);
+        transform: rotateX(0rem);
+    }
+    60%
+    {
+        transform: translateX(0.5rem);
+        transform: translateY(0.5rem);
+        transform: rotateX(0.5rem);
+    }
+    100%
+    {
+        transform: translateX(0rem);
+        transform: translateY(0rem);
+        transform: rotateX(0rem);
+    }
+        
+}
+    

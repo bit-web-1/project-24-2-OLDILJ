@@ -19,16 +19,19 @@
         font-size: x-large;
         justify-content: space-evenly;
         padding-right: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     li
     {
         
         border: .15em solid rgb(0, 0, 0);
-        width: auto;
+        
         
     }
     li a
     {
+        
         transition: all .25s ease-in-out;
         color: rgb(20, 20, 20);
         text-align: center;

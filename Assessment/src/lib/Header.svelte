@@ -10,11 +10,13 @@
     {
         display: inline-block;
         width: 80%;
-        padding-left: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-bottom: 2%;
     }
     img
     {
+        float: right;
         transition: all 1s ease-in-out;
         padding-left: 5%;
         vertical-align: middle;
@@ -35,7 +37,7 @@
     {
         display: inline-block;
         transition: all 1s ease-in-out;
-        vertical-align: middle;
+        vertical-align: bottom;
     }
     h1:active
     {
