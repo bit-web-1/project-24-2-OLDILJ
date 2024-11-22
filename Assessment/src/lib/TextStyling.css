@@ -1,0 +1,25 @@
+body
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h2, h3
+{
+    display: flex;
+    justify-self: center;
+}
+p
+{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    color: rgb(52, 52, 52);
+}
+img
+{
+    float: left;
+    padding-left: 5%;
+    vertical-align: middle;
+
+}
