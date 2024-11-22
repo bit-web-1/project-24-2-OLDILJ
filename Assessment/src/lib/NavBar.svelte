@@ -7,6 +7,7 @@
     <li><a href="/About">About</li>
     <li><a href="/Latest">Latest</li>
     <li><a href="/Contact">Contact</li>
+    <li><a href="/Weather">Weather</li>
 </ul>
 
 <style>

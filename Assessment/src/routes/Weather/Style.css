@@ -1,0 +1,29 @@
+.container
+{
+    transition: all 1s ease-in-out;
+    padding: 10%,10%;
+    border: 0.5em solid black;
+    margin-top: 5rem;
+}
+span:hover
+{
+    text-rendering: optimizeLegibility;
+    display: inline-block;
+    font-size: large;
+    animation: wave-text 1s ease-in-out infinite;
+}
+@keyframes wave-text {
+    0%
+    {
+        transform: translateY(0rem);
+    }
+    60%
+    {
+        transform: translateY(-0.5rem);
+    }
+    100%
+    {
+        transform: translateY(0rem);
+    }
+    
+}
